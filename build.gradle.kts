@@ -5,11 +5,9 @@ plugins {
 }
 
 buildscript {
-    repositories {
-        mavenCentral()
-    }
     dependencies {
         classpath(libs.kotlin.gradle.plugin)
         classpath(libs.hilt.android.gradle.plugin)
+        classpath(libs.com.google.devtools.ksp.gradle.plugin)
     }
 }

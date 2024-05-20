@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("com.google.devtools.ksp") version "1.9.24-1.0.20"
+    id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -67,18 +68,23 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // ViewModel for Compose
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
     // Enables collectAsStateWithLifecycle() method
     implementation(libs.androidx.lifecycle.runtime.compose)
 
     // Hilt
     implementation(libs.hilt.android)
-    ksp(libs.dagger.compiler)
+    ksp(libs.hilt.compiler)
 
     // Retrofit
     implementation(libs.retrofit)
+    implementation(libs.converter.moshi)
 
     // Moshi
     implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
 
     // Glide
     implementation(libs.compose)
