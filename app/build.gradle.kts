@@ -88,4 +88,8 @@ dependencies {
 
     // Glide
     implementation(libs.compose)
+    
+    // Okhttp
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
 }

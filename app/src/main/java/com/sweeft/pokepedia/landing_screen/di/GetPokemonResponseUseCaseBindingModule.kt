@@ -9,7 +9,7 @@ import dagger.hilt.android.components.ViewModelComponent
 
 @Module
 @InstallIn(ViewModelComponent::class)
-object GetPokemonResponseUseCaseModule {
+object GetPokemonResponseUseCaseBindingModule {
     @Provides
     fun providesGetPokemonResponseUseCase(
         pokemonResponseRepository: PokemonResponseRepository

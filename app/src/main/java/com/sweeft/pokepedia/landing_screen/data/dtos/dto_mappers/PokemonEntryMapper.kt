@@ -1,4 +1,4 @@
-package com.sweeft.pokepedia.landing_screen.data.mappers
+package com.sweeft.pokepedia.landing_screen.data.dtos.dto_mappers
 
 import com.sweeft.pokepedia.landing_screen.data.dtos.PokemonEntryDto
 import com.sweeft.pokepedia.landing_screen.domain.model.PokemonEntry
